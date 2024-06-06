@@ -1,0 +1,131 @@
+body {
+  background: #101426;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .todo-form {
+  display: flex;
+
+  background: #222b45;
+  padding: 2rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.container .todo-form .todo-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 1rem;
+}
+
+.todo-input-container label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.Todo-input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.todo-form button {
+  display: flex;
+  margin: 1rem;
+  align-self: flex-end;
+}
+
+.todos-list-container {
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: gray;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+.todo-container {
+  background: #38444d;
+  border-radius: 6px;
+  width: 40%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.todo-container h3 {
+  background-color: #15202b;
+  text-transform: capitalize;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.todo-container p {
+  padding: 10px;
+}
+
+.react-icon {
+  margin-left: 15px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: #e5e5e5;
+  color: black;
+  padding: 2px 7px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.highlighted-input {
+  border: 2px solid red;
+}
+
+.disable-cursor {
+  pointer-events: none;
+}
+
+.todo-status {
+  height: 10px;
+  width: 10px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  margin: 0px 5px;
+}
+
+.todo-status-completed {
+  background: green;
+}
+
+select {
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 660px) {
+  .todo-form button {
+    align-self: center;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .container .todo-form {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+}
